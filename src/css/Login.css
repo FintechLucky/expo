@@ -32,10 +32,18 @@ body {
     background-color: white;
     border-radius: 10px;
     border-color: #ffe900;
+    display: flex;
+    align-items: center;
 }
 
 .LoginText {
-    font-size: 4.23vw;
+    font-size: 16px;
     font-weight: bolder;
-    
+    margin-left: 45px;
+}
+
+.Loginimg {
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
 }
