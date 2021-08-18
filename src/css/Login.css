@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffe900;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.AppName {
+    margin-top: 20vh;
+    font-size: 9.5vw;
+    font-weight:bolder;
+    color:#3c1d1d
+}
+
+.subTitle {
+    font-size:4.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}
+
+.LoginBtn {
+    margin-bottom: 159px;
+    width: 314px;
+    height: 54px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #ffe900;
+}
+
+.LoginText {
+    font-size: 4.23vw;
+    font-weight: bolder;
+    
+}
