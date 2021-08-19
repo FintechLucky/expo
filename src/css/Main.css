@@ -11,6 +11,12 @@ body {
     flex-direction: column;
 }
 
+.containerprofile {
+    width: 100vw;
+    background-color: #ffffff;
+    display: 'flex'
+}
+
 .AppNamemain {
     margin-top: 25px;
     font-size: 3.75vw;
@@ -22,4 +28,18 @@ body {
     margin-top: 15px;
     width: 90vw;
     height: 43px;
+}
+
+.user{
+    margin-top: 15px;
+    margin-left: 35px;
+    width: 80px;
+    height: 80px;
+}
+
+.username{
+    margin-top:35px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 27px;
 }
