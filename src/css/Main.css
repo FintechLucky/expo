@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.containermain {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AppNamemain {
+    margin-top: 25px;
+    font-size: 3.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}
+
+.line{
+    margin-top: 15px;
+    width: 90vw;
+    height: 43px;
+}

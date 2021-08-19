@@ -5,6 +5,7 @@ import login from './inc/login';
 import qrcode from './inc/qrcode';
 import qrmethod1 from './inc/qrmethod1';
 import qrmethod2 from './inc/qrmethod2';
+import main from './inc/main';
 
 class App extends Component{
   constructor(props){
@@ -21,6 +22,7 @@ class App extends Component{
           <Route path="/qrcode" component={qrcode} exact/>
           <Route path="/qrcode/qrmethod1" component={qrmethod1} exact/>
           <Route path="/qrcode/qrmethod2" component={qrmethod2} exact/>
+          <Route path="/main" component={main} exact/>
         </BrowserRouter>
       </div>
       
