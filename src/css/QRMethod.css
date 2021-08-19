@@ -2,14 +2,6 @@ body {
     margin: 0;
 }
 
-.container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffe900;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .pagemark{
     margin-top: 15px;
