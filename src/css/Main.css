@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.containermain {
+.container_main {
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
@@ -11,35 +11,47 @@ body {
     flex-direction: column;
 }
 
-.containerprofile {
+.container_profile {
     width: 100vw;
     background-color: #ffffff;
     display: 'flex'
 }
 
-.AppNamemain {
+.AppName_main {
     margin-top: 25px;
     font-size: 3.75vw;
     font-weight:bolder;
     color:#3c1d1d;
 }
 
-.line{
+.line_main{
     margin-top: 15px;
     width: 90vw;
     height: 43px;
 }
 
-.user{
+.user_main{
     margin-top: 15px;
-    margin-left: 35px;
+    margin-left: 60px;
     width: 80px;
     height: 80px;
 }
 
-.username{
+.username_main{
     margin-top:35px;
     font-size: 25px;
     font-weight: bolder;
     margin-left: 27px;
+}
+
+.state_main{
+    margin-top:35px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.make_main{
+    width: 100vw;
+    height: 100px;
+    margin-bottom:35px;
 }

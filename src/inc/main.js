@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Main.css'
 
 class main extends Component {
 
@@ -19,24 +20,26 @@ class main extends Component {
             }
           });
       }
+
       
     render() {  
 
         return (
-            <div className='containermain'>
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <span className='AppNamemain'>Fin Pay</span>
+            <div className='container_main'>
+                <span className='AppName_main'>Fin Pay</span>
+                <img className='line_main' src={require('../img/substract.png').default} alt='talkimg' />
+                
+                <div className='container_profile'>
+                    <img className='user_main' src={require('../img/user.png').default} alt='talkimg' />
+                    <span className='username_main'>고객명</span>
                 </div>
                 
-                <img className='line' src={require('../img/substract.png').default} alt='talkimg' />
-                
-                <div className='containerprofile'>
-                    <img className='user' src={require('../img/user.png').default} alt='talkimg' />
-                    <span className='username'>고객명</span>
-                </div>
-                
-                <img className='line' src={require('../img/substract.png').default} alt='talkimg' />
+                <img className='line_main' src={require('../img/substract.png').default} alt='talkimg' />
 
+                <div className='container_profile'>
+                    <span className='state_main'>정산중인 모임들</span>
+                </div>
+                <img className='make_main' src={require('../img/make.png').default} alt='talkimg' />
             </div>
         );
     }
