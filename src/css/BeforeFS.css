@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.container_before {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AppName_before {
+    margin-top: 25px;
+    font-size: 3.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+    margin-bottom: 30px;
+}
