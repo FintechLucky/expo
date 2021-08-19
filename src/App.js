@@ -5,6 +5,8 @@ import login from './inc/login';
 import main from './inc/main'
 import CallbackKakao from './inc/callbackKakao';
 import qrcode from './inc/qrcode';
+import qrmethod1 from './inc/qrmethod1';
+import qrmethod2 from './inc/qrmethod2';
 
 class App extends Component{
   constructor(props){
@@ -21,6 +23,8 @@ class App extends Component{
             <Route path="/main" component={main} exact/>
             <Route path="/callback/kakao" component={CallbackKakao} exact/>
             <Route path="/qrcode" component={qrcode} exact/>
+            <Route path="/qrcode/qrmethod1" component={qrmethod1} exact/>
+            <Route path="/qrcode/qrmethod2" component={qrmethod2} exact/>
           </Router>
         </div>
     )

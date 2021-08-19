@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffe900;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagemark{
+    margin-top: 15px;
+    width: 80vw;
+    height: 43px;
+}
+
+.commentmethod1 {
+    margin-top:100px;
+    font-size:4.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}
+
+.commentmethod2 {
+    font-size:4.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+    margin-bottom:55px;
+}
+
+.qrimage {
+    width: 30px;
+    height: 70px;
+}
