@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffe900;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.AppName {
+    margin-top: 20vh;
+    font-size: 9.5vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}
+
+.subTitle {
+    font-size:4.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}
+
+.comment1{
+    margin-top: 150px;
+    font-size:3.5vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}
+
+.comment2{
+    font-size:3.5vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+    align-items: center;
+}
+
+.PhotoBtn {
+    margin-bottom: 0px;
+    width: 314px;
+    height: 54px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #ffe900;
+    display: flex;
+    align-items: center;
+}
+
+.PhotoText {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 45px;
+}
+
+.Photoimg {
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+}
+
+.QRBtn {
+    margin-bottom: 0px;
+    width: 314px;
+    height: 54px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #ffe900;
+    display: flex;
+    align-items: center;
+}
+
+.QRText {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 45px;
+}
+
+.QRimg {
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+}
+
+.MethodBtn {
+    margin-bottom: 10px;
+    width: 314px;
+    height: 54px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #ffe900;
+    display: flex;
+    align-items: center;
+}
+
+.MethodText {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 40px;
+}
