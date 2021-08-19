@@ -5,6 +5,7 @@ import '../css/QRCode.css'
 function QRCode(){
 
     const [img, setImage] = useState(null);
+    const [payLink, setPayLink] = useState("");
 
     const onChange = (e) => {
         setImage(e.target.files[0]);
@@ -14,8 +15,15 @@ function QRCode(){
         // QR 리더 api 를 통해 송금 qr 코드 디코딩 하여 paylink 얻음
         const formData = new FormData();
         formData.append('file',img)
-        const res = await axios.post("https://api.qrserver.com/v1/read-qr-code/", formData);
-        const payLink = res.data[0].symbol[0].data;
+        await fetch('https://api.qrserver.com/v1/read-qr-code/', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .catch(error => console.error('Error:', error))
+          .then(response => {
+            setPayLink(response[0].symbol[0].data);
+          });
 
         // 얻어온 payLink를 서버로 날려 DB에 저장시킴
         await axios({
