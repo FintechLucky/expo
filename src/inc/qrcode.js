@@ -44,11 +44,12 @@ function QRCode(){
                     <span className='comment2'>이미지를 등록해주세요</span>
                     <span className='comment3'>* 사진 불러오기 후 이미지 등록을 누르면 사진이 업로드 됩니다 *</span>
                 </div>
-                <button className='PhotoBtn'>
-                    <img className='Photoimg' src={require('../img/gallery.png').default} alt='talkimg' />
+                <label htmlFor='file' className='PhotoBtn'>
+                    <img className='Photoimg' src={require('../img/gallery.png').default} alt='talkimg'  />
                     <span className='PhotoText'>사진 불러오기</span>
-                </button>
-                <button className='QRBtn'>
+                </label>
+                <input type='file' id='file' name='file' onChange={onChange}/>
+                <button className='QRBtn' onClick={onClick}>
                     <img className='QRimg' src={require('../img/qr-code.png').default} alt='talkimg' />
                     <span className='QRText'>송금 QR 이미지 등록</span>
                 </button>
