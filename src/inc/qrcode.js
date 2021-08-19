@@ -8,8 +8,10 @@ class qrcode extends Component {
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <span className='AppName'>F i n     P a y</span>
                     <span className='subTitle'>쉬 운  정 산,  빠 른  송 금</span>
+
                     <span className='comment1'>송금 요청을 위한 카카오톡 송금 QR 코드</span>
                     <span className='comment2'>이미지를 등록해주세요</span>
+                    <span className='comment3'>* 사진 불러오기 후 이미지 등록을 누르면 사진이 업로드 됩니다 *</span>
                 </div>
                 <button className='PhotoBtn'>
                     <img className='Photoimg' src={require('../img/gallery.png').default} alt='talkimg' />
