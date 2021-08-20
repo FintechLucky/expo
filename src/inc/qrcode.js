@@ -5,7 +5,6 @@ import '../css/QRCode.css'
 function QRCode(){
 
     const [img, setImage] = useState(null);
-    const [payLink, setPayLink] = useState("");
 
     const onChange = (e) => {
         setImage(e.target.files[0]);
@@ -24,22 +23,36 @@ function QRCode(){
           .then(response => {
             setPayLink(response[0].symbol[0].data);
           });
+        }
 
-        // 얻어온 payLink를 서버로 날려 DB에 저장시킴
-        await axios({
-            method:'post',
-            url: '/user/qrCode',
-            data: {
-                payLink : payLink,
-                email : localStorage.getItem("userEmail")
-            }
-        }).then((result) => {
-            // 세션 유지를 위해 localStorage 사용
-            localStorage.setItem("userPayLink", result.data.payLink);
+    const setPayLink = async (payLink) =>{
+        if(payLink){
+            console.log(payLink)
+            // 얻어온 payLink를 서버로 날려 DB에 저장시킴
+            await axios({
+                method:'post',
+                url: '/user/qrCode',
+                data: {
+                    payLink : payLink,
+                    email : localStorage.getItem("userEmail")
+                }
+            }).then((result) => {
+                // 세션 유지를 위해 localStorage 사용
+                localStorage.setItem("userPayLink", result.data.payLink);
 
-            // 다 끝나면 main page 이동
-            document.location.href = "/main";
-        })
+                // 다 끝나면 main page 이동
+                document.location.href = "/main";
+        })}else{
+            alert('이미지를 재 등록 해주세요.')
+        }
+    }
+        
+
+        
+    
+
+    const goMethod = () => {
+        document.location.href = "/qrcode/qrmethod1";
     }
 
         return (
@@ -63,7 +76,7 @@ function QRCode(){
                         <img className='QRimg' src={require('../img/qr-code.png').default} alt='talkimg' />
                         <span className='QRText'>송금 QR 이미지 등록</span>
                     </button>
-                    <button className='MethodBtn'>
+                    <button className='MethodBtn' onClick={goMethod}>
                         <span className='MethodText'>송금 QR 이미지 다운로드 방법</span>
                     </button>
                 </div>

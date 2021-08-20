@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {useLocation} from "react-router-dom";
 import axios from 'axios';
+import '../css/Login.css'
 
 function CallbackKakao() {
     const search = useLocation().search;
@@ -60,9 +61,15 @@ function CallbackKakao() {
 
   
     return (
-      <>
-          카카오 로그인 중 - 로그인 로딩 화면 디자인 필요
-      </>
+      <div className='container'>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems:'center'}}>
+          <span className='AppName'>F i n&nbsp;&nbsp;&nbsp;&nbsp;P a y</span>
+          <span className='subTitle'>쉬 운  정 산 , 빠 른  송 금</span>
+        </div>
+        <div className='greeting'>
+          <span >W e l c o m e  ! !</span>
+        </div>
+      </div>
     )
   }
   

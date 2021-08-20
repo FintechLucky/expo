@@ -47,3 +47,10 @@ body {
     height: 36px;
     margin-left: 16px;
 }
+
+.greeting {
+    margin-bottom: 18vh;
+    font-size:4.75vw;
+    font-weight:bolder;
+    color:#3c1d1d;
+}

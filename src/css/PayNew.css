@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+
+.grayContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f3f5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100vw;
+    height: 6vh ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.addBtn {
+    background-color: #f2f3f5;
+    border-width: 0px;
+}
+
+.addText {
+    color: #ffa800;
+    font-size: 4.3vw;
+    font-weight: bolder;
+}
+
+.headerText {
+    font-size: 4.3vw;
+    font-weight:900;
+    margin-right: 5vw;
+}
+
+.cancleBtn {
+    background-color: #f2f3f5;
+    border: 0px;
+}
+
+.body {
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    height: 84vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payInput {
+    background-color: #ffffff;
+    width: 80vw;
+    height: 66vh;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #D2CFCF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payWay {
+    width: 75vw;
+    height: 6vh;
+}
+
+.newMeet {
+    background-color: #ffffff;
+    width: 80vw;
+    height: 9vh;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #D2CFCF;
+}
+
+.bottom {
+    background-color: #e8ecef;
+    width: 100vw;
+    height: 10vh;
+    border: 0px;
+}
+
+.bottomText {
+    font-size: 5vw;
+    color: #8c9096;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 1100px) { 
+    .addText {
+        font-size: 50px;
+    }
+
+    .headerText {
+        font-size: 50px;
+        margin-right: 1vw;
+    }
+}
