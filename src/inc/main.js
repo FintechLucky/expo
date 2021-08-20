@@ -3,11 +3,12 @@ import '../css/Main.css'
 
 class main extends Component {
 
-    componentDidMount(){
+
+    /**componentDidMount(){
         this.friends()
     }
 
-    //로그인시 저장되있던 AccessToken 활용하여 사용자 친구목록 불러오기
+    
     friends = async () => {
         const {Kakao} = window;
         Kakao.API.request({
@@ -19,9 +20,13 @@ class main extends Component {
               console.log(error);
             }
           });
-      }
+      }**/
 
-      
+    onClick(){
+
+        window.open('/main/beforefs')
+    }
+
     render() {  
 
         return (
@@ -49,7 +54,7 @@ class main extends Component {
 
                 <img className='line_main' src={require('../img/substract.png').default} alt='talkimg' />
 
-                <button>
+                <button onClick={this.onClick}>
                     <img className='make_main' src={require('../img/make.png').default} alt='talkimg' />
                 </button>
             </div>

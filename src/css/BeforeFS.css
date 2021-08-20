@@ -18,3 +18,8 @@ body {
     color:#3c1d1d;
     margin-bottom: 30px;
 }
+
+.input_name{
+    width: 500px;
+    height: 34px;
+}
