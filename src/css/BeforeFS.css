@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.container_main {
+.container_before {
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
@@ -11,13 +11,13 @@ body {
     flex-direction: column;
 }
 
-.container_profile {
+.container_profile_before {
     width: 100vw;
     background-color: #ffffff;
     display: 'flex'
 }
 
-.AppName_main {
+.AppName_before {
     margin-top: 25px;
     font-size: 3.75vw;
     font-weight:bolder;
@@ -25,33 +25,25 @@ body {
     margin-bottom: 30px;
 }
 
-.line_main{
-    margin-top: 15px;
-    width: 90vw;
-    height: 43px;
+.input_name{
+    width: 500px;
+    height: 34px;
 }
 
-.user_main{
+.user_before{
     margin-top: 15px;
     margin-left: 60px;
     width: 80px;
     height: 80px;
 }
 
-.username_main{
-    margin-top:35px;
-    font-size: 25px;
-    font-weight: bolder;
-    margin-left: 27px;
+.cbox{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
 }
 
-.state_main{
-    margin-top:35px;
-    font-size: 20px;
-    margin-left: 60px;
-}
-
-.make_main{
+.freind_selcet{
     width: 100vw;
     height: 100px;
 }

@@ -8,6 +8,7 @@ import qrcode from './inc/qrcode';
 import qrmethod1 from './inc/qrmethod1';
 import qrmethod2 from './inc/qrmethod2';
 import paynew from './inc/paynew';
+import beforefs from './inc/beforefs';
 
 class App extends Component{
   constructor(props){
@@ -22,6 +23,7 @@ class App extends Component{
           <Router>
             <Route path="/" component={login} exact/>
             <Route path="/main" component={main} exact/>
+            <Route path="/main/beforefs" component={beforefs} exact/>
             <Route path="/callback/kakao" component={CallbackKakao} exact/>
             <Route path="/qrcode" component={qrcode} exact/>
             <Route path="/qrcode/qrmethod1" component={qrmethod1} exact/>
