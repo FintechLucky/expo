@@ -11,6 +11,12 @@ body {
     flex-direction: column;
 }
 
+.container_profile_before {
+    width: 100vw;
+    background-color: #ffffff;
+    display: 'flex'
+}
+
 .AppName_before {
     margin-top: 25px;
     font-size: 3.75vw;
@@ -22,4 +28,22 @@ body {
 .input_name{
     width: 500px;
     height: 34px;
+}
+
+.user_before{
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 80px;
+    height: 80px;
+}
+
+.cbox{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.freind_selcet{
+    width: 100vw;
+    height: 100px;
 }

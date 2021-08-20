@@ -1,38 +1,53 @@
 import React, { Component } from 'react';
 import '../css/Main.css'
 
+let responses ="";
 class main extends Component {
+    constructor(props) {
+        super(props);
+        this.state={
+            response:[]
+        }
+       
+    }
 
-
-    /**componentDidMount(){
+    componentDidMount(){
         this.friends()
     }
 
     
     friends = async () => {
         const {Kakao} = window;
+     
         Kakao.API.request({
             url: '/v1/api/talk/friends',
             success: function(response) {
-              console.log(response);
+                responses=response.elements
+                // this.setState({response:response.elements})
             },
             fail: function(error) {
               console.log(error);
             }
           });
-      }**/
 
-    onClick(){
+      }
 
-        window.open('/main/beforefs')
+    submit = event=> {
+        event.preventDefault();
+        console.log(this.props)
+     
+        // window.open('/main/beforefs')
+        this.props.history.push({
+            pathname: "/main/beforefs",
+            state: { lists: responses },
+          });
     }
 
     render() {  
 
         return (
             <div className='container_main'>
-                <span className='AppName_main'>Fin Pay</span>
-                
+
                 <div className='container_profile'>
                     <img className='user_main' src={require('../img/user.png').default} alt='talkimg' />
                     <span className='username_main'>고객명</span>
@@ -54,7 +69,7 @@ class main extends Component {
 
                 <img className='line_main' src={require('../img/substract.png').default} alt='talkimg' />
 
-                <button onClick={this.onClick}>
+                <button onClick={this.submit}>
                     <img className='make_main' src={require('../img/make.png').default} alt='talkimg' />
                 </button>
             </div>
